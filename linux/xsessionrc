@@ -1,0 +1,13 @@
+!
+! my ~/.xsessionrc for LXDE 
+
+! g : gharb //maghreb numbers 
+setxkbmap "us,ars" -variant ",g" -option "grp:lwin_toggle,grp_led:caps";
+
+! c : charq //machriq numbers 
+!setxkbmap "us,ars" -variant ",c" -option "grp:lwin_toggle,grp_led:caps";
+
+! after making changes, you ll need to invoke
+! xrdb -merge ~/.xsessionrc
+! or 
+! reboot 
