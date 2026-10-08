@@ -4,6 +4,7 @@
 ! g : gharb //maghreb numbers 
 setxkbmap "us,ars" -variant ",g" -option "grp:lwin_toggle,grp_led:caps";
 
+! variant 
 ! c : charq //machriq numbers 
 !setxkbmap "us,ars" -variant ",c" -option "grp:lwin_toggle,grp_led:caps";
 

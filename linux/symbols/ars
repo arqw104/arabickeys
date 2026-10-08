@@ -1,12 +1,12 @@
-//
-//ars : Arabic (simplified) //
-//Simplified Arabic keyboard layout for a QWERTY keyboard //
 
-// Author:	M_Rouaki,	mdrouaki@gmail.com
-// 01-07-2026
+// ars - Arabic (simplified) 
+// Simplified Arabic keyboard layout for a QWERTY keyboard 
 
-//-------------------------------------
-//g : gharb //maghreb numbers 
+// Copyright (c) 2026 Mohamed Rouaki 
+// Licensed under the MIT License. See LICENSE file for details.
+
+// -------------------------------------
+// g - maghreb numbers 
 
 default partial alphanumeric_keys 
 xkb_symbols "g" {
@@ -68,8 +68,8 @@ xkb_symbols "g" {
 };
 
 
-//------------------------------------
-//c : charq //machriq numbers 
+// ------------------------------------
+// c - machriq numbers 
 
 partial alphanumeric_keys modifier_keys
 xkb_symbols "c" {
@@ -77,16 +77,16 @@ xkb_symbols "c" {
     name[Group1]= "simplified arabic, machriq";
 
     key <TLDE> { [ grave,	asciitilde	] };
-    key <AE01> { [ Arabic_1,	exclam		] };
-    key <AE02> { [ Arabic_2,	at		] };
-    key <AE03> { [ Arabic_3,	numbersign	] };
-    key <AE04> { [ Arabic_4,	dollar		] };
-    key <AE05> { [ Arabic_5,	percent		] };
-    key <AE06> { [ Arabic_6,	asciicircum	] };
-    key <AE07> { [ Arabic_7,	ampersand	] };
-    key <AE08> { [ Arabic_8,	asterisk	] };
-    key <AE09> { [ Arabic_9,	parenright	] };
-    key <AE10> { [ Arabic_0,	parenleft, degree	] };
+    key <AE01> { [ Arabic_1,	exclam,		1	] };
+    key <AE02> { [ Arabic_2,	at,			2	] };
+    key <AE03> { [ Arabic_3,	numbersign,	3	] };
+    key <AE04> { [ Arabic_4,	dollar,		4	] };
+    key <AE05> { [ Arabic_5,	percent,	5	] };
+    key <AE06> { [ Arabic_6,	asciicircum,6	] };
+    key <AE07> { [ Arabic_7,	ampersand,	7	] };
+    key <AE08> { [ Arabic_8,	asterisk,	8	] };
+    key <AE09> { [ Arabic_9,	parenright,	9	] };
+    key <AE10> { [ Arabic_0,	parenleft,	0, degree	] };
     key <AE11> { [ minus,	underscore, Arabic_tatweel	] };
     key <AE12> { [ equal,	plus		] };
 
