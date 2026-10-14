@@ -15,7 +15,7 @@ on the same key and using the `SHIFT` key.
 * The Arabic vowels are arranged according to the first letter of the 
 vowel's name.
 
-**The `"ars"` keyboard layout**
+### The `"ars"` keyboard layout
 
 ![](ars.png)
 
@@ -37,6 +37,8 @@ vowel's name.
 │     └── images/ 			        # images 
 ├── README.md
 └── ars.png                     
+└── ars-qw.png                      # Layout of the physical Arabic QWERTY keyboard (ars)
+
 
 ```
 
@@ -66,6 +68,10 @@ to your `~/.xsessionrc` file.
 ### Windows
 - Copy `ars-install/` folder and execute `setup.exe`.
 - Remark : `"install/"` folder created using `Microsoft Keyboard Layout Creator` (MSKLC.exe)
+
+### Layout of a physical bilingual Arabic-English QWERTY keyboard `"ars"` 
+
+![](ars-qw.png)
 
 ## License
 This repository is licensed under `MIT License`. 
