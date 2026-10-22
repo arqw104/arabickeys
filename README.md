@@ -1,78 +1,75 @@
-# Simplified Arabic Keyboard Layout (ars) 
+<div dir="rtl" lang="ar">
+# تخطيط لوحة مفاتيح عربية مبسّط (ars)
 
-## Overview
+## نظرة عامة
 
-This repository provides an improved Arabic character layout on the 
-**bilingual QWERTY Arabic-English** keyboard.
+يوفّر هذا المستودع تخطيطًا محسّنًا للأحرف العربية على لوحة مفاتيح **QWERTY ثنائية اللغة (عربية-إنجليزية)**.
 
-The improvements implemented here aim to reduce finger movement and facilitate the memorization of character positions.
+تهدف التحسينات إلى تقليل حركة الأصابع وتسهيل حفظ مواضع الأحرف.
 
-* A first simplification consists of keeping the same keys for all symbol 
-characters and punctuation characters for both Arabic and English keyboards.
-* Another simplification involves placing certain Arabic characters that 
-have the same shape   
-on the same key and using the `SHIFT` key.
-* The Arabic vowels are arranged according to the first letter of the 
-vowel's name.
+* يتمثّل التبسيط الأول في أن مفاتيح الرموز و الأرقام هي نفسها في لوحات العربية والإنجية.
+* تبسيط أخر يكمن في وضع الأحرف العربية المتشابهة على مفتاح واحد، مع استخدام **Shift** للوصول إلى أحدها.
+* رُتّبت الحركات العربية بحسب الحرف الأول من اسم كل حركة.
 
-### The `"ars"` keyboard layout
+### تخطيط لوحة المفاتيح `"ars"`
 
 ![](ars.png)
 
-## Repository Structure
+## بنية المستودع
 
-```
+```text
 .
-├── linux/
-│     └── symbols/
-│           └── ars					# simplified arabic keyboard layout for linux
-│     └── rules/
-│           └── evdev.xml			# for GNOME, Plasma (KDE)
-│     └── xsessionrc				# my ~/.xsessionrc for LXDE 
-│     └── ars-variant.png			# image "ars" variant numbers : ١٢٣٤٥٦٧٨٩٠ 
-├── windows/
-│     └── ars-install/				# simplified arabic keyboard layout for Windows
-│       └── setup.exe ...           # created using MSKLC.exe 
-│     └── arsc-install/...			# "arsc" ("ars" variant) numbers : ١٢٣٤٥٦٧٨٩٠
-│     └── images/ 			        # images 
-├── README.md
-└── ars.png                     
-└── ars-qw.png                      # Layout of the physical Arabic QWERTY keyboard (ars)
-
-
+┤── linux/
+│     ┘── symbols/
+│           ┘── ars                    # تخطيط لوحة مفاتيح عربية مبسّط لنظام Linux
+│     ┘── rules/
+│           ┘── evdev.xml               # لـ GNOME وPlasma (KDE)
+│     ┘── xsessionrc                    # ملف ~/.xsessionrc الخاص بي لـ LXDE
+│     ┘── ars-variant.png               # صورة أرقام النسخة «ars»: ١٢٣٤٥٦٧٨٩٠
+│     ┘── ars-color.png               
+┤── windows/
+│     ┘── ars-install/                  # تخطيط لوحة مفاتيح عربية مبسّط لنظام Windows
+│       ┘── setup.exe ...               # أُنشئ باستخدام MSKLC.exe
+│     ┘── arsc-install/...              # أرقام النسخة «arsc» (إحدى نسخ «ars»): ١٢٣٤٥٦٧٨٩٠
+│     ┘── images/                       # صور
+┤── README.md
+┤── README-English.md
+┘── ars.png
+┘── ars-qw.png                          # تخطيط لوحة مفاتيح QWERTY العربية الفعلية (ars)
 ```
 
-## Quick Start
+## البدء السريع
 
-To implement the `"ars"` keyboard layout 
-
+لتفعيل تخطيط لوحة المفاتيح `"ars"`:
 
 ### Linux
 
-#### GNOME or Plasma (KDE)
-1. Copy the `ars` file to `/usr/share/X11/xkb/symbols/` folder 
-on your local system
-2. Copy the `evdev.xml` file to 
-`/usr/share/X11/xkb/rules/` folder on your local system. 
-3. Run `udevadm trigger --subsystem-match=input --action=change` or reboot 
- 
-#### LXDE
-1. Copy the `ars` file to `/usr/share/X11/xkb/symbols/` folder
-on your local system
-2. Add the command line  
- `setxkbmap "us,ars" -variant ",g" -option "grp:lwin_toggle,grp_led:caps";`  
-to your `~/.xsessionrc` file.
-3. Execute `xrdb -merge ~/.xsessionrc` or reboot
-- Remark : for ars (variant), in 2. replace `",g"` by `",c"` 
- 
-### Windows
-- Copy `ars-install/` folder and execute `setup.exe`.
-- Remark : `"install/"` folder created using `Microsoft Keyboard Layout Creator` (MSKLC.exe)
+#### GNOME أو Plasma (KDE)
 
-### Layout of a physical bilingual Arabic-English QWERTY keyboard `"ars"` 
+1. انسخ الملف `ars` إلى المجلد `/usr/share/X11/xkb/symbols/` على نظامك المحلي.
+2. انسخ الملف `evdev.xml` إلى المجلد `/usr/share/X11/xkb/rules/` على نظامك المحلي.
+3. شغّل الأمر `udevadm trigger --subsystem-match=input --action=change` أو أعد تشغيل النظام.
+
+#### LXDE
+
+1. انسخ الملف `ars` إلى المجلد `/usr/share/X11/xkb/symbols/` على نظامك المحلي.
+2. أضف سطر الأوامر التالي إلى ملف:
+ `~/.xsessionrc`   
+ `setxkbmap "us,ars" -variant "," -option "grp:lwin_toggle,grp_led:caps"`
+3. نفّذ الأمر `xrdb -merge ~/.xsessionrc` أو أعد تشغيل النظام.
+
+- ملاحظة: لاستخدام نسخة `ars`، استبدل `","` في الخطوة 2 بـ `",c"`.
+
+### Windows
+
+- انسخ المجلد `ars-install/` وشغّل `setup.exe`.
+- ملاحظة: أُنشئ المجلد `"install/"` باستخدام `Microsoft Keyboard Layout Creator` (MSKLC.exe).
+
+### تخطيط لوحة مفاتيح QWERTY فعلية ثنائية اللغة (عربية-إنجليزية) `"ars"`
 
 ![](ars-qw.png)
 
-## License
-This repository is licensed under `MIT License`. 
+## الترخيص
 
+هذا المستودع مرخّص بموجب **رخصة MIT**.
+</div>

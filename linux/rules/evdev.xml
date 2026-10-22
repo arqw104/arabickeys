@@ -1316,14 +1316,14 @@
   <variantList>
     <variant>
       <configItem>
-        <name>g</name>
-        <description>Arabic (Simplified, Maghreb)</description>
+        <name>basic</name>
+        <description>Arabic (Maghreb numbers)</description>
       </configItem>
     </variant>
     <variant>
       <configItem>
         <name>c</name>
-        <description>Arabic (Simplified, Machriq)</description>
+        <description>Arabic (Machriq numbers)</description>
       </configItem>
     </variant>
   </variantList>

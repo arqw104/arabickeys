@@ -6,11 +6,11 @@
 // Licensed under the MIT License. See LICENSE file for details.
 
 // -------------------------------------
-// g - maghreb numbers 
+// basic - maghreb numbers 
 
 default partial alphanumeric_keys 
-xkb_symbols "g" {
-	name[Group1]= "simplified arabic, maghreb";
+xkb_symbols "basic" {
+	name[Group1]= "simplified arabic, maghreb numbers";
 
     key <TLDE> { [ grave,	asciitilde	] };
     key <AE01> { [ 1,		exclam		] };
@@ -73,8 +73,8 @@ xkb_symbols "g" {
 
 partial alphanumeric_keys modifier_keys
 xkb_symbols "c" {
-	include "ars(g)"
-    name[Group1]= "simplified arabic, machriq";
+	include "ars(basic)"
+    name[Group1]= "simplified arabic, machriq numbers";
 
     key <TLDE> { [ grave,	asciitilde	] };
     key <AE01> { [ Arabic_1,	exclam,		1	] };
