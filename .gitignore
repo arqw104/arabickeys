@@ -2,6 +2,9 @@
 *.swp
 *.*~
 .lab/*
+.lab2/*
+.chiv/*
 .mylog
 .vimrc
 .tmp
+

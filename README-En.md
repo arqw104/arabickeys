@@ -12,7 +12,11 @@ and punctuation in both the Arabic and English keyboards layouts.
 * Another simplification is to place similarly shaped Arabic characters on the same key, using **Shift** to access one of them. 
 * Arabic vowels are arranged according to the first letter of each vowel's name.
 
-### The `"ars"` keyboard layout
+### Bilingual `"ars"` Arabic-English QWERTY keyboard 
+
+![](ars-qw.png)
+
+### The `"ars"` Arabic keyboard layout
 
 ![](ars.png)
 
@@ -27,16 +31,16 @@ and punctuation in both the Arabic and English keyboards layouts.
 │           └── evdev.xml			# for GNOME, Plasma (KDE)
 │     └── xsessionrc				# my ~/.xsessionrc for LXDE 
 │     └── ars-variant.png			# image "ars" variant numbers : ١٢٣٤٥٦٧٨٩٠ 
-│     └── ars-color.png			
 ├── windows/
 │     └── ars-install/				# simplified Arabic keyboard layout for Windows
 │       └── setup.exe ...           # created using MSKLC.exe 
 │     └── arsc-install/...			# "arsc" ("ars" variant) numbers : ١٢٣٤٥٦٧٨٩٠
 │     └── images/ 			        # images 
 ├── README.md
-├── README-English.md
+├── README-En.md
 └── ars.png                     
 └── ars-qw.png                      # Layout of the physical Arabic QWERTY keyboard (ars)
+└── ars-color.png			
 
 ```
 
@@ -66,10 +70,6 @@ to your `~/.xsessionrc` file.
 ### Windows
 - Copy `ars-install/` folder and execute `setup.exe`.
 - Remark : `"install/"` folder created using `Microsoft Keyboard Layout Creator` (MSKLC.exe)
-
-### Layout of a physical bilingual Arabic-English QWERTY keyboard `"ars"` 
-
-![](ars-qw.png)
 
 ## License
 This repository is licensed under `MIT License`. 

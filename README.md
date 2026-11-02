@@ -11,7 +11,12 @@
 * تبسيط أخر يكمن في وضع الأحرف العربية المتشابهة على مفتاح واحد، مع استخدام **Shift** للوصول إلى أحدها.
 * رُتّبت الحركات العربية بحسب الحرف الأول من اسم كل حركة.
 
-### تخطيط لوحة المفاتيح `"ars"`
+### مظهر لوحة مفاتيح ثنائية اللغة عربية-إنجليزية `"ars"`
+
+![](ars-qw.png)
+
+
+### تخطيط لوحة المفاتيح العربية `"ars"`
 
 ![](ars.png)
 
@@ -21,21 +26,21 @@
 .
 ┤── linux/
 │     ┘── symbols/
-│           ┘── ars                    # تخطيط لوحة مفاتيح عربية مبسّط لنظام Linux
+│           ┘── ars                     # تخطيط لوحة مفاتيح عربية مبسّط لنظام Linux
 │     ┘── rules/
 │           ┘── evdev.xml               # لـ GNOME وPlasma (KDE)
 │     ┘── xsessionrc                    # ملف ~/.xsessionrc الخاص بي لـ LXDE
-│     ┘── ars-variant.png               # صورة أرقام النسخة «ars»: ١٢٣٤٥٦٧٨٩٠
-│     ┘── ars-color.png               
+│     ┘── ars-variant.png               # صورة لنسخة «ars» مع الارقام : ١٢٣٤٥٦٧٨٩٠
 ┤── windows/
 │     ┘── ars-install/                  # تخطيط لوحة مفاتيح عربية مبسّط لنظام Windows
 │       ┘── setup.exe ...               # أُنشئ باستخدام MSKLC.exe
-│     ┘── arsc-install/...              # أرقام النسخة «arsc» (إحدى نسخ «ars»): ١٢٣٤٥٦٧٨٩٠
+│     ┘── arsc-install/...              # أرقام النسخة «arsc» : ١٢٣٤٥٦٧٨٩٠
 │     ┘── images/                       # صور
 ┤── README.md
-┤── README-English.md
+┤── README-En.md
 ┘── ars.png
 ┘── ars-qw.png                          # تخطيط لوحة مفاتيح QWERTY العربية الفعلية (ars)
+┘── ars-color.png               
 ```
 
 ## البدء السريع
@@ -64,10 +69,6 @@
 
 - انسخ المجلد `ars-install/` وشغّل `setup.exe`.
 - ملاحظة: أُنشئ المجلد `"install/"` باستخدام `Microsoft Keyboard Layout Creator` (MSKLC.exe).
-
-### تخطيط لوحة مفاتيح QWERTY فعلية ثنائية اللغة (عربية-إنجليزية) `"ars"`
-
-![](ars-qw.png)
 
 ## الترخيص
 
