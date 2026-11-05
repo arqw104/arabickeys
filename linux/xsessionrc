@@ -9,6 +9,6 @@ setxkbmap "us,ars" -variant "," -option "grp:lwin_toggle,grp_led:caps";
 #setxkbmap "us,ars" -variant ",c" -option "grp:lwin_toggle,grp_led:caps";
 
 # after making changes, you ll need to invoke
-# xrdb -merge ~/.xsessionrc
+# logout
 # or 
 # reboot 
