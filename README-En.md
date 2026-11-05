@@ -64,7 +64,7 @@ on your local system
 2. Add the command line  
  `setxkbmap "us,ars" -variant "," -option "grp:lwin_toggle,grp_led:caps";`  
 to your `~/.xsessionrc` file.
-3. Execute `xrdb -merge ~/.xsessionrc` or reboot
+3. Execute logout or reboot
 - Remark : for ars (variant), in 2. replace `","` by `",c"` 
  
 ### Windows
