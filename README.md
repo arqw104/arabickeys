@@ -62,7 +62,7 @@
 2. أضف سطر الأوامر التالي إلى ملف:
  `~/.xsessionrc`   
  `setxkbmap "us,ars" -variant "," -option "grp:lwin_toggle,grp_led:caps"`
-3. نفّذ الأمر `xrdb -merge ~/.xsessionrc` أو أعد تشغيل النظام.
+3. نفّذ الأمر logout أو reboot.
 
 - ملاحظة: لاستخدام نسخة `ars`، استبدل `","` في الخطوة 2 بـ `",c"`.
 
